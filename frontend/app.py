@@ -18,7 +18,7 @@ st.title("Gerenciamento de Produtos", help="If you need any help, Google it. Or 
 # Função auxiliar para exibir mensagens de erro detalhadas
 def show_response_message(response):
     if response.status_code == 200:
-        st.success("Operação realizada com sucesso!")
+        st.success("Operação realizada com sucesso!", icon=":material/thumb_up:")
     else:
         try:
             data = response.json()
@@ -53,7 +53,7 @@ with st.expander("Adicionar um Novo Produto"):
                 json={
                     "name": name,
                     "description": description,
-                    "price": price,
+                    "price": price, 
                     "category": category,
                     "supplier_email": supplier_email,
                 },
