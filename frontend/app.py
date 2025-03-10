@@ -11,7 +11,7 @@ st.set_page_config(
         "About": "https://www.mercadolivre.com.br/"
     })
 
-st.image("frontend/logo.png", width=200)
+st.image("frontend\logo.png", width=200)
 
 st.title("Gerenciamento de Produtos", help="If you need any help, Google it. Or ChatGPT it. Don't bother us. Thank you.")
 
